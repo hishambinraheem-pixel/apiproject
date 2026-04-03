@@ -23,9 +23,6 @@ import 'package:flutter_application_1/models.dart';
   }
 }
 
-
-
-
 class ApiGet {
   final Dio dio = Dio();
 
@@ -41,8 +38,7 @@ class ApiGet {
       );
 
       print(response.data);
-
-      return response.data; // ✅ IMPORTANT FIX
+      return response.data;
     } catch (e) {
       print("Profile error: $e");
       return null;
